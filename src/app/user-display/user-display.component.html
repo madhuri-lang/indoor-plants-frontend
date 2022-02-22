@@ -1,0 +1,48 @@
+<html>
+    <body>
+    <br>
+
+    <!-- <button class="one" (click)="getAllUsers()">Get All Users</button> <br><br>
+    <input type="number" [(ngModel)]="id"> &nbsp; &nbsp;
+    <button (click)="getUserById()">Get User By ID</button> <br><br>
+    <input type="text" [(ngModel)]="name"> &nbsp; &nbsp;
+    <button (click)="getUserByName()">Get User By Name</button> <br><br> -->
+   
+    <button class="one" (click)="getOrdersByEmail()">Get All Previous Orders</button> <br><br>
+
+<!-- <table id="users">
+<tr>
+    <th *ngFor ="let col of columns">
+        {{ col }}
+    </th>
+</tr>
+<tr *ngFor ="let user of signupUsers">
+    <td>{{user.id}}</td>
+    <td> {{user.name}} </td>
+    <td> {{user.phone}} </td>
+    <td> {{user.email}} </td>
+    <td> {{user.password}} </td>
+
+</tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+<table id="users">
+    <tr>
+        <th *ngFor ="let orderCol of orderColumns">
+            {{ orderCol }}
+        </th>
+    </tr>
+    <tr *ngFor ="let item of orders">
+        <td>{{item.id}}</td>
+        <td> {{item.cost}} </td>
+        <td> {{item.cardtitle}} </td>
+        <td> {{item.category}} </td>
+        <td> {{item.quantity}} </td>
+        <td>{{item.orderdate}}</td>
+    
+    </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

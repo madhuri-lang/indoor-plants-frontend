@@ -1,0 +1,136 @@
+
+  .container{
+    width:100%;
+    margin:auto;
+    padding-top:4%;
+    padding-bottom:4%;
+  }
+  .row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .row::after{
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .col-1 {width:8.33% ;}
+  .col-2 {width:16.66% ;}
+  .col-3 {width:25% ;}
+  .col-4 {width:33.33% ;}
+  .col-5 {width:41.66% ;}
+  .col-6 {width: 50%;}
+  .col-7 {width:58.33% ;}
+  .col-8 {width:66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width:83.33% ;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width:100% ;}
+
+  button{
+      border-radius: 7px;
+      padding : 10px;
+      background-color:#ff6b6b ;
+  }
+  h4,p{
+      color: brown;
+  }
+  
+  h1{
+    font-size: 50px;
+      text-align: center;
+      font-family: 'Lobster', cursive;
+      color: #0d6efd;
+  }
+  h3,li{
+      color:#686868;
+  }
+  li{
+    list-style: none;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  footer.footsy{
+    background-color:#f5f3ed;
+    padding-left:10%;
+  } 
+  footer.footsy h4{
+    
+    color:#686868;
+  }
+  
+  footer.footsy ul{
+    list-style: none;
+    text-align:left;
+    padding-left:0;
+  }
+  footer.footsy ul li{
+    color:#686868;
+    
+    line-height: 1.5;
+  }
+ footer.footf p{
+    background-color:#333;
+ }
+
+.ani{
+  animation:zoomIn;
+  animation-duration: 2s;
+  --animate-repeat: 2;
+}
+.movement img:hover
+{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1) translateY(-5px);
+}
+.scroll{
+  /* background-color: #f6dff7; */
+  font-size:40px;
+  font-family: 'Lobster', cursive;
+  color:#09a9b8;
+  text-align:center;
+  /* margin-left:70px; */
+ 
+}

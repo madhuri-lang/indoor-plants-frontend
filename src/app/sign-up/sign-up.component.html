@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="text-center" class="login">
+                    <h3 class="animate__animated animate__bounce animate__repeat-4" style="animation-delay: 1s;">Register with Growgreen!!</h3>
+                    <h5>Get Free Membership</h5>
+                    
+                </div>
+                <hr>
+                   <form [formGroup]="signupForm" (ngSubmit)="onSignUp()" >
+                    <div class="mb-3">
+                      <label class="form-label ">Name</label>
+                      <input formControlName="name" placeholder="Enter your name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <span class="text-danger" *ngIf="signupForm.controls['name'].dirty && signupForm.hasError('required','name')">Name is required!</span>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label ">Phone Number</label>
+                        <input formControlName="phone" placeholder="Enter your Phone" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <span class="text-danger" *ngIf="signupForm.controls['phone'].dirty && signupForm.hasError('required','phone')">Phone Number is required!</span>
+                      </div>
+                      <div class="mb-3">
+                        <label f class="form-label ">Email address</label>
+                        <input formControlName="email" placeholder="Enter your email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <span class="text-danger" *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">Email is required!</span>
+                      </div>
+                    <div class="mb-3">
+                      <label class="form-label ">Password</label>
+                      <input formControlName="password" placeholder="Enter your password" type="password" class="form-control" id="exampleInputPassword1">
+                      <span class="text-danger" *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required','password')">Password is required!</span>
+                    </div>
+                    
+                    <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary" class="login" >Register</button>
+                  </form>
+                  <br><a routerLink="/login"> Already a User? Click to Login !</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<br>
+<br><br><br>
+
+
+
+
+
+
+</body>
+</html>

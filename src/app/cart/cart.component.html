@@ -1,0 +1,67 @@
+<ng-container *ngIf="products.length !=0" >
+   
+    <div class="container">
+   <div class="card-table">
+       <div class="cart-product">
+          
+           <table class="table table-responsive">
+               <thead>
+                   <tr>
+                       <th>S.No</th>
+                       <th>Product ID</th>
+                       <th>Product Name</th>
+                       <th>Product Image</th>
+                       <th>Price</th>
+                       <th>Quantity</th>
+                       <th>Total</th>
+                       <th>Action</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr *ngFor="let item of products; let i = index" >
+                       <td>{{i+1}}</td>
+                       <td>{{item.id}}</td>
+                       <td> {{item.cardtitle}} </td>
+                       <td> <img style="width:120px;" src="{{item.url}}" alt="" > </td>
+                       <td>&#8377;{{item.cost}}  </td>
+                       <td><button class="circle" (click)="decQuantity(item)"><i class="fa fa-minus"></i></button> &nbsp; {{item.quantity}} &nbsp; <button class="circle" (click)="incQuantity(item)"><i class="fa fa-plus"></i></button> </td>
+                       <td>&#8377;{{item.totalprice}}</td>
+                       <td>
+                           <button (click)="removeProduct(item)" class="btn btn-danger"><i class="fa fa-trash"></i>  </button>
+                       </td>
+                   
+                   </tr>
+                   <tr>
+                       <td colspan="4"></td>
+                       <td><button (click)="emptyCart()" class="btn btn-danger">Empty Cart</button></td>
+                       <td><button routerLink="/electronics" class="btn btn-primary">Shop More</button></td>
+                       <td><button class="btn btn-success"   routerLink='/checkout'>Check Out</button></td>
+                       <td><strong>Grand Total: &#8377;{{grandTotalcost()}}</strong></td>
+                       <!-- <td><strong>Grand Total: &#8377;{{grand}}</strong></td> -->
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+   </div>
+  </div>
+
+</ng-container>
+
+
+
+<ng-container *ngIf="products.length ==0">
+<div class="container">
+    <div class="card">
+        <h5 class="card-title">My Cart</h5>
+    </div>
+    <div class="center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTa2d8pa-liAyiWCbPHQ_2yfyz1I6fAcSyas2ZU9CJNPIsavq0G2dV1g9p51_f1xgd9M&usqp=CAU" alt="">
+        <h4>Your Cart is Empty!</h4>
+        <h6>Add item to it now</h6> 
+        <button routerLink="/electronics" class="btn btn-primary">Shop Now</button>
+    </div>
+</div>
+</ng-container>
+
+
+

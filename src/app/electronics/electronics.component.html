@@ -1,0 +1,141 @@
+
+ 
+ <br>
+<div class="search-hero">
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search by Name.. " >  
+</div>
+<!-- <div fxHide.lt-md style="float:right">
+  <span class="column-label">Columns</span>
+  <mat-slider [min]="3" [max]="6" [thumbLabel]="true"  aria-label="unit(s)" [(ngModel)]="gridColumns" style="color:red;"></mat-slider>
+</div> -->
+
+<div class="card-top container-fluid ">
+  <div class="container d-flex">
+    <!-- <div fxLayout="row wrap" fxLayoutGap="16px grid" > 
+      <div fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="33%"> -->
+    <div class="item one">
+      <a  (click)="filter('')">
+        <img src="/assets/images/allproducts.jpeg" alt="" width="100px" height="100px;" style="border-radius: 50%;">
+        <h6>All Products</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('valueformoney')">
+        <img src="/assets/images/valueformoney.jpeg" alt="" width="100px" height="100px;" style="border-radius: 50%;">
+        <h6>Value For Money</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('bulbflowers')">
+        <img src="/assets/images/winterbulbs.jpeg" alt="" width="100px" height="100px;" style="border-radius: 50%;" >
+        <h6>Winter Flower Bulbs</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('bonsaiplants')" >
+        <img src="/assets/images/bonsaiPlants.png" alt="" width="100px" height="100px;" >
+        <h6>Bonsai Plants</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('ceramicpots')">
+        <img src="/assets/images/ceramic.png" alt="" width="100px" height="100px;" >
+        <h6>Ceramic Pots</h6>
+      </a>
+    </div>
+  </div>
+</div>
+
+    <br>
+
+<!-- <a href="#"><h1>Value For Money Sales</h1></a>
+<br> -->
+
+  <div fxLayout="row wrap" fxLayoutGap="20px grid" >   
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%"  *ngFor="let p of filterCategory  | filter:searchText">
+            <mat-card class="mat-elevation-z4 card shadow" >
+               <img mat-card-image src={{p.url}} >
+               <mat-card-header>
+                <mat-card-title>&#8377;{{p.cost}}</mat-card-title>
+               </mat-card-header>
+              <mat-card-content>
+                <p>{{p.cardtitle}}</p>
+              </mat-card-content>
+              <mat-card-actions>
+              <button (click)='addToCart(p)' >Add to Cart</button>
+              </mat-card-actions>
+            </mat-card>
+    </div>
+  </div>
+
+
+
+<!-- <br>
+<br>
+<a href="#"><h1>Winter Flower Bulbs</h1></a>
+<br>
+<div fxLayout="row wrap" fxLayoutGap="20px grid" >  
+  <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let f of filterCategory | filter:searchText">
+            <mat-card class="mat-elevation-z4 card" >
+              <img mat-card-image src={{f.url}} >
+              <mat-card-header>
+                <mat-card-title>&#8377;{{f.cost}}</mat-card-title>
+              </mat-card-header>
+                <mat-card-content>
+                  <p>{{f.cardtitle}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                <button (click)="addToCart(f)">Add to Cart</button>
+              </mat-card-actions>
+              </mat-card>
+      </div>
+    </div>
+  
+
+
+<br>
+<br>
+<a href="#"><h1>Bonsai Plants</h1></a>
+<br>
+<div fxLayout="row wrap" fxLayoutGap="20px grid" >   
+  <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let b of filterCategory  | filter:searchText">
+    <mat-card class="mat-elevation-z4 card" >
+      <img mat-card-image src={{b.url}} >
+      <mat-card-header>
+        <mat-card-title>&#8377;{{b.cost}}</mat-card-title>
+      </mat-card-header>
+        <mat-card-content>
+          <p>{{b.cardtitle}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+        <button (click)="addToCart(b)">Add to Cart</button>
+      </mat-card-actions>
+      </mat-card>
+</div>
+</div>
+
+<br>
+<br>
+<a href="#"><h1>Ceramic Pots</h1></a>
+<br>
+<div fxLayout="row wrap" fxLayoutGap="20px grid" >  
+  <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%"  *ngFor="let c of filterCategory  | filter:searchText">
+     <mat-card class="mat-elevation-z4 card" >
+      <img mat-card-image src={{c.url}} >
+      <mat-card-header>
+        <mat-card-title>&#8377;{{c.cost}}</mat-card-title>
+      </mat-card-header>
+        <mat-card-content>
+          <p>{{c.cardtitle}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+        <button (click)="addToCart(c)">Add to Cart</button>
+      </mat-card-actions>
+      </mat-card>
+</div>
+</div>
+  -->
+
+
+
+

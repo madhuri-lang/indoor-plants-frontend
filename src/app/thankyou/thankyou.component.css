@@ -1,0 +1,29 @@
+
+body{
+    background-image: url('/assets/images/bg1.jpeg');
+    background-size: cover;
+    background-repeat: none;
+}
+  h1{
+      font-size:60px;
+      font-family: 'Lobster', cursive;
+      color:#3deff2;
+    text-align:center;
+    margin-top:-5%;
+    margin-left:100px;
+  }
+  p{
+    font-size:40px;
+    font-family: 'Lobster', cursive;
+    color:#baf6f7;
+    text-align:center;
+    margin-left:70px;
+   
+  }
+  button{
+
+    background-color: #65d31f;
+    border-radius: 7px;
+    padding:15px;
+    margin-left:700px;
+  }

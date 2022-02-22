@@ -1,0 +1,45 @@
+#users{
+    border-collapse: collapse;
+    width:70%;
+    margin:auto;
+    margin-top: 100px;
+}
+
+#users td, #users th{
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+#users{
+    background-color: #f2f2f2;
+}
+#users tr:hover{
+    background-color: #ddd;
+}
+#users th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color:white;
+}
+body{
+    background: url('src/assets/images/bg1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+html{
+    background-size: auto;
+}
+input{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    margin-left:200px;
+}
+button{
+    border-radius: 10px;
+    padding:10px;
+}
+.one{
+    margin-left:200px;
+}

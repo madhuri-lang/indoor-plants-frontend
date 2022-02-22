@@ -1,0 +1,55 @@
+<html>
+  <body>
+    
+  
+<div class="container" >
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="text-center" class="login">
+                    <h3>Login to Growgreen!! </h3>
+                    <h5>Feel free to login!</h5>
+                    
+                </div>
+                <hr> 
+                <!-- <p>id is :{{id}}</p> -->
+                <!-- <div ngFor="let user of user">
+                  <p>{{user.name}}</p>
+                 
+                </div>  -->
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">Email ID is required!</span>
+                      
+
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                      <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Password is required!</span>
+                    </div>
+                    
+                    <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary" class="login" >Login</button>
+                  </form> <br>
+                  <a routerLink="/sign-up"> New User? Click to SignUp !</a> &nbsp; &nbsp; &nbsp; 
+                  <a routerLinkActive="active" routerLink="/forgotpassword" > Forgot Password?</a> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div *ngFor="let user of users">
+  <p>{{user.name}}</p>
+  <p>{{user.index[0]}}</p>
+</div> -->
+<!-- <cartComponent [userEmail]="userEmail"></cartComponent> -->
+
+
+<br><br><br>
+<br><br><br><br>
+<br><br><br>
+</body>
+</html>
+

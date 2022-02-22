@@ -1,0 +1,89 @@
+ <!-- <html> 
+<head> 
+<title>Stripe Payment </title> 
+<link type="text/css" rel="stylesheet" href="https://checkout.stripe.com/v3/checkout/button-qpwW2WfkB0oGWVWIASjIOQ.css">
+</head>
+<body> 
+    <h3>Welcome to Payment Gateway</h3> 
+    <form action="http://localhost:3000/payment" method="POST"> 
+    <script
+        src="//checkout.stripe.com/v2/checkout.js"
+        class="stripe-button"
+        data-key="<%= key %>" 
+        data-amount="{{grandTotal}}" 
+        data-currency="usd" 
+        data-name="Madhuri Vakkala" 
+        data-description="Buy Indoor Plants" 
+        data-locale="auto" > 
+        </script>
+        <button type="submit" class="stripe-button-el" style="visibility: visible;"><span style="display: block; min-height: 30px;">Pay with Card</span></button> 
+        
+    </form> 
+    <iframe frameborder="0" allowtransparency="true" src="http://checkout.stripe.com/v3/k7NvLmX7CQ4t5S85kQXOg.html?distinct_id=ab2543c8-9500-cbe7-27e9-edff4589b762" name="stripe_checkout_app" class="stripe_checkout_app" style="z-index: 2147483647; display: none; background: rgba(0, 0, 0, 0.004); border: 0px none transparent; overflow: hidden auto; visibility: visible; margin: 0px; padding: 0px; -webkit-tap-highlight-color: transparent; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></iframe>
+</body> 
+</html> -->
+
+<html> 
+    <head>
+        <link rel="stylesheet/css" href="payment.component.css">
+        </head>
+<body>
+<!-- <app-headernew></app-headernew>  -->
+<div class="mainscreen">
+    <div class="card">
+      <div class="leftside">
+        <img src="./assets/images/bg1.jpeg" class="product" alt="Shoes" />
+      </div>
+      <div class="rightside">
+        <form class="mb-5" novalidate (ngSubmit)="buy()" [formGroup]="stripeForm">
+          <h1>CheckOut</h1>
+          <h2>Payment Information</h2>
+          <p>Cardholder Name</p>
+
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="name" placeholder="name" id="name" name="name" required>
+            <span class="text-danger" *ngIf="stripeForm.get('name')?.errors?.required  && submitted">
+            Email is required
+            </span>
+          </div>
+        
+          <p>Card Number</p>
+          <div class="form-group" style="visibility: hidden;color: white;font-weight: bold;">
+            <input type="text" class="form-control" formControlName="amount" placeholder="Amount*" required>
+            <span class="text-danger" *ngIf="stripeForm.get('amount')?.errors?.required && submitted">
+              Amount is required
+            </span>
+          </div>
+          <div class="ele" style="border: 2px solid black;">
+            <div class="form-group">
+              <div id="stripeCard" class="field"></div>
+            </div>
+          </div>
+         
+          <p>Card Type</p>
+          <select class="inputbox" name="card_type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="RuPay">RuPay</option>
+            <option value="MasterCard">MasterCard</option>
+          </select>
+           <div class="expcvv">
+  
+            <p class="expcvv_text">Expiry</p>
+            <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+  
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required />
+          </div>
+          <p></p>
+          <button type="submit" class="button" (click)="orders()" routerLink="/thankyou">Pay &#8377;{{grandTotalcost()}}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+  </body>
+   <!-- <app-footer></app-footer>  -->
+  </html>   
+<!-- 
+  (click)= emptyCart() -->

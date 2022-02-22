@@ -1,0 +1,221 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "signup": [
+    {
+      "name": "Madhuri",
+      "phone": "7780622969",
+      "email": "madhuri@gmail.com",
+      "password": "MadhuriMTX",
+      "id": 1
+    },
+    {
+      "name": "Sindhu",
+      "phone": "9897655439",
+      "email": "sindhu@gmail.com",
+      "password": "sindhuMTX",
+      "id": 2
+    },
+    {
+      "name": "Deepa",
+      "phone": "6785489889",
+      "email": "deepa@gmail.com",
+      "password": "deepaMTX",
+      "id": 3
+    },
+    {
+      "name": "Arshiya",
+      "phone": "9845376344",
+      "email": "arshiya@gmail.com",
+      "password": "arshiyaMTX",
+      "id": 4
+    },
+    {
+      "name": "Yuktha",
+      "phone": "7678943244",
+      "email": "yuktha@gmail.com",
+      "password": "yukthaMTX",
+      "id": 5
+    },
+    {
+      "name": "sayandeep",
+      "phone": "3456789902",
+      "email": "sayandeep@gmail.com",
+      "password": "sayandeep",
+      "id": 6
+    },
+    {
+      "name": "manoj",
+      "phone": "6787874579",
+      "email": "manoj@gmail.com",
+      "password": "manoj",
+      "id": 7
+    }
+  ],
+  "plants": [
+    {
+      "cost": "1349",
+      "cardtitle": "Beautiful Flowers of the Season",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-beautiful-flowers-of-the-season_30d90171-633b-403a-b2ba-d86c040d5587_362x362.jpg?v=1634216665",
+      "category": "valueformoney",
+      "id": 1
+    },
+    {
+      "cost": "999",
+      "cardtitle": "Set of 3 Outdoor flowering plants",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-packs-plants-set-of-3-outdoor-flowering-plants-for-beautiful-garden-16969318301836_362x362.jpg?v=1634228699",
+      "category": "valueformoney",
+      "id":2
+    },
+    {
+      "cost": "1049",
+      "cardtitle": "Top 4 Plants for Healthy Homes",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/combo-packs-plants-top-4-plants-for-healthy-homes_362x362.jpg?v=1634230215",
+      "category": "valueformoney",
+      "id": 3
+    },
+    {
+      "cost": "949",
+      "cardtitle": "Best 4 plants to kill indoor Pollution",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-packs-plants-best-4-plants-to-kill-indoor-pollution-16968631713932_362x362.jpg?v=1634214305",
+      "category": "valueformoney",
+      "id": 4
+    },
+    {
+      "cost": "1099",
+      "cardtitle": "World Environment Day Special",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-packs-plants-world-environment-day-special-4-plants-pack-16969434529932_362x362.jpg?v=1634231463",
+      "category": "valueformoney",
+      "id":5
+    },
+    {
+      "cost": "1199",
+      "cardtitle": "Independence Day Special",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-packs-plants-independence-day-special-4-plants-pack-16968950972556_362x362.jpg?v=1634222174",
+      "category": "valueformoney",
+      "id": 6
+    },
+    {
+      "cost": "1349",
+      "cardtitle": "Set of 5 Beautiful Dianthus Plants",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-set-of-5-beautiful-dianthus-plants-1_83ca7236-1712-4804-859a-e194b7fe7ea1_362x362.jpg?v=1634228719",
+      "category": "valueformoney",
+      "id": 7
+    },
+    {
+      "cost": "599",
+      "cardtitle": "Gladiolus Flower Bulbs",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/093cef4f08ff326611cb1ee1b82cbb77_600x600.jpg?v=1614078957",
+      "category": "bulbflowers",
+      "id": 8
+    },
+    {
+      "cost": "649",
+      "cardtitle": "Zephyranthes Lily Flower Bulbs",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/b45d81a8b42c53ce576ea74862b8d47d_600x600.jpg?v=1614079014",
+      "category": "bulbflowers",
+      "id": 9
+    },
+    {
+      "cost": "699",
+      "cardtitle": "Daffodil Flower Bulbs",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/60713d771e8e222d7a50ff71da6fb980_600x600.jpg?v=1614079145",
+      "category": "bulbflowers",
+      "id":10
+    },
+    {
+      "cost": "549",
+      "cardtitle": "Hyacinth Flower Bulbs",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/41645e2dc5e3bac2ae240a123fb17519_600x600.jpg?v=1614089785",
+      "category": "bulbflowers",
+      "id":11
+    },
+    {
+      "cost": "689",
+      "cardtitle": "Tulip Flower Bulbs",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/3deea72de3e1251177beb61e9648481d_600x600.jpg?v=1614118722",
+      "category": "bulbflowers",
+      "id":12
+    },
+    {
+      "cost": "529",
+      "cardtitle": "Ranunculus Flower Bulbs",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/208243ea2a5605e9943058a60a3cf1e7_0295f4b1-99cc-4e36-b809-58375436938b_600x600.jpg?v=1614090010",
+      "category": "bulbflowers",
+      "id":13
+    },
+    {
+      "cost": "899",
+      "cardtitle": "Ficus Bonsai and Laughing Buddha",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-wish-good-luck-with-ficus-bonsai-and-laughing-buddha-16969427845260_362x362.jpg?v=1634231081",
+      "category": "bonsaiplants",
+      "id":14
+    },
+    {
+      "cost": "16,849",
+      "cardtitle": "Jade Bonsai Formal Upright Style",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-plants-jade-bonsai-formal-upright-style-plant-16968965718156_362x362.jpg?v=1634222547",
+      "category": "bonsaiplants",
+      "id":15
+    },
+    {
+      "cost": "349",
+      "cardtitle": "Ficus Iceland - Plant",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-ficus-iceland-plant_362x362.jpg?v=1634219463",
+      "category": "bonsaiplants",
+      "id":16
+    },
+    {
+      "cost": "11,049",
+      "cardtitle": "Ficus Panda Bonsai - Plant",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-plants-ficus-panda-bonsai-plant-16968859222156_362x362.jpg?v=1634219557",
+      "category": "bonsaiplants",
+      "id":17
+    },
+    {
+      "cost": "349",
+      "cardtitle": "Vertical Ridges Marble Ceramic Pot",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-3-6-inch-9-cm-vertical-ridges-marble-finish-round-ceramic-pot-with-rim-light-brown-16968458829964_362x362.jpg?v=1634207819",
+      "category": "ceramicpots",
+      "id":18
+    },
+    {
+      "cost": "299",
+      "cardtitle": "Round Ceramic Pot with Rim",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-4-1-inch-10-cm-round-ceramic-pot-with-rim-navy-blue-16968476819596_362x362.jpg?v=1634208382",
+      "category": "ceramicpots",
+      "id":19
+    },
+    {
+      "cost": "399",
+      "cardtitle": "Dot Embossed Round Ceramic Pot",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-2-8-inch-7-cm-dot-embossed-round-ceramic-pot-red-16968446902412_362x362.jpg?v=1634207234",
+      "category": "ceramicpots",
+      "id":20
+    },
+    {
+      "cost": "399",
+      "cardtitle": "Square box Ceramic Pot",
+      "url": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-3-3-inch-8-cm-square-box-ceramic-pot-white-16968458043532_362x362.jpg?v=1634207739",
+      "category": "ceramicpots",
+      "id":21
+    }
+  ]
+
+  
+}
